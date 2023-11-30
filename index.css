@@ -140,19 +140,6 @@ table, th, td {
     margin-right: 5px; /* เพิ่มระยะห่างระหว่างรูปภาพและข้อความ */
     vertical-align: middle; /* ให้รูปภาพอยู่ตรงกลางตามความสูงของข้อความ */
 }
-.gold-type {
-    font-weight:none; /* ทำให้ข้อความ "OLD GOLD" เป็นตัวหนา */
-    display: block;
-    font-size: 14px;
-    margin-right: 3.7cm;
-    color: blue;
-}
-
-
-
-
-
-
 
 #priceA, #priceB, 
 #priceC, #priceD, 
