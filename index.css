@@ -1,6 +1,6 @@
 /* CSS สำหรับหน้าจอขนาดเล็ก (mobile) */
 @media only screen and (max-width: 600px) {
-    #table1, #table2, #table3, #table4, #table5 {
+    #table1, #table2, #table3, #table4, #table5, #gold-type {
         width: 100%;
     }
     th, td {
@@ -10,7 +10,7 @@
 
 /* CSS สำหรับหน้าจอขนาดกลาง (tablet) */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    #table1, #table2, #table3, #table4, #table5 {
+    #table1, #table2, #table3, #table4, #table5,#gold-type  {
         width: 80%;
     }
     th, td {
@@ -20,7 +20,7 @@
 
 /* CSS สำหรับหน้าจอขนาดใหญ่ (desktop) */
 @media only screen and (min-width: 1025px) {
-    #table1, #table2, #table3, #table4, #table5 {
+    #table1, #table2, #table3, #table4, #table5,#gold-type  {
         width: 50%;
     }
     th, td {
@@ -140,6 +140,15 @@ table, th, td {
     margin-right: 5px; /* เพิ่มระยะห่างระหว่างรูปภาพและข้อความ */
     vertical-align: middle; /* ให้รูปภาพอยู่ตรงกลางตามความสูงของข้อความ */
 }
+.gold-type {
+    font-weight:none; /* ทำให้ข้อความ "OLD GOLD" เป็นตัวหนา */
+    display: block;
+    font-size: 14px;
+    margin-right: 3.7cm;
+    color: blue;
+}
+
+
 
 
 
