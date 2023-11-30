@@ -125,7 +125,7 @@ table, th, td {
 }
 
 table th {
-    background-color: #7403ab;
+    background-color: rgba(116, 3, 171, 0.5);
     color: white;
 }
 /* ลบเส้นขอบด้านบนและด้านข้างของตาราง */
