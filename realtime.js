@@ -73,9 +73,10 @@ function updatePrice(priceElement, buyElement, productData) {
     buyElement.textContent = formatPrice(productData.buyPrice);
 }
 
-// สร้างฟังก์ชันเพื่ออัปเดตเวลาและวันที่
+// สร้างฟังก์ชัน updateDateTime ที่ return updateTime
 function updateDateTime() {
-    const now = new Date();
+    const updateTime = new Date();
+
     const options = {
         weekday: 'long',
         year: 'numeric',
@@ -84,18 +85,19 @@ function updateDateTime() {
         hour: '2-digit',
         minute: '2-digit',
     };
-    
-    const formattedDate = now.toLocaleDateString('th-TH', options);
-    
-    const updateTimeElement = document.getElementById('updateTime');
-    updateTimeElement.textContent = `อัปเดต : ${formattedDate.replace(/(\d{4}) (.+)(\d{2}:\d{2})/, 'เวลา $3 น.')}`;
+
+    const formattedDateTime = new Intl.DateTimeFormat('th-TH', options).format(updateTime);
+
+    // คืนค่า updateTime ถ้าต้องการให้ตัวแปรนี้สามารถใช้งานต่อไป
+    return updateTime;
 }
 
-// เรียกใช้งานฟังก์ชันเมื่อหน้าเว็บโหลด
-updateDateTime();
+// เรียกใช้ฟังก์ชันเพื่ออัปเดตวันที่และเวลาและเก็บค่า updateTime
+const updateTime = updateDateTime();
 
-// อัปเดตเวลาและวันที่ทุก 1 นาที
-setInterval(updateDateTime, 60000); // 1 นาที = 60000 มิลลิวินาที
+// ใช้ updateTime ในการอัปเดต element บนหน้าเว็บ
+const updateTimeElement = document.getElementById('updateTimeElement');
+updateTimeElement.textContent = `อัปเดต : ${updateTime.toLocaleDateString('th-TH', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })} เวลา ${updateTime.toLocaleTimeString('th-TH', { hour: '2-digit', minute: '2-digit' })} น.`;
 
 
 
