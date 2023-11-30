@@ -88,7 +88,7 @@ function updateDateTime() {
     const formattedDate = now.toLocaleDateString('th-TH', options);
     
     const updateTimeElement = document.getElementById('updateTime');
-    updateTimeElement.textContent = `อัปเดต :${formattedDate.replace(/(\d{4}) (.+)(\d{2}:\d{2})/, 'เวลา $3 น.')}`;
+    updateTimeElement.textContent = `อัปเดต : ${formattedDate.replace(/(\d{4}) (.+)(\d{2}:\d{2})/, 'เวลา $3 น.')}`;
 }
 
 // เรียกใช้งานฟังก์ชันเมื่อหน้าเว็บโหลด
@@ -97,11 +97,6 @@ updateDateTime();
 // อัปเดตเวลาและวันที่ทุก 1 นาที
 setInterval(updateDateTime, 60000); // 1 นาที = 60000 มิลลิวินาที
 
-// เรียกใช้งานฟังก์ชันเมื่อหน้าเว็บโหลด
-updateDateTime();
-
-// อัปเดตเวลาและวันที่ทุก 1 นาที
-setInterval(updateDateTime, 60000); // 1 นาที = 60000 มิลลิวินาที
 
 
 
