@@ -1,0 +1,165 @@
+/* CSS สำหรับหน้าจอขนาดเล็ก (mobile) */
+@media only screen and (max-width: 600px) {
+    #table1, #table2, #table3, #table4, #table5 {
+        width: 100%;
+    }
+    th, td {
+        font-size: 14px;
+    }
+}
+
+/* CSS สำหรับหน้าจอขนาดกลาง (tablet) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    #table1, #table2, #table3, #table4, #table5 {
+        width: 80%;
+    }
+    th, td {
+        font-size: 16px;
+    }
+}
+
+/* CSS สำหรับหน้าจอขนาดใหญ่ (desktop) */
+@media only screen and (min-width: 1025px) {
+    #table1, #table2, #table3, #table4, #table5 {
+        width: 50%;
+    }
+    th, td {
+        font-size: 18px;
+    }
+}
+@font-face {
+    font-family: 'sukhumvit';
+    src: url('Fonts/SukhumvitSet-Text.ttf') format('truetype');
+    unicode-range: U+E00-E7F;
+}
+div {
+    text-align: center;
+    margin: 0ยป; /* เพิ่มระยะห่าง */
+}
+
+h1, h2, h4 {
+    margin: 0; /* ลบ margin ที่ถูกกำหนดใน h1, h2, h4 */
+}
+
+body {
+    font-family: 'sukhumvit',sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+/* เพิ่มระยะห่างด้านล่างของ table1 */
+#table1 {
+    margin-bottom: 0.1px;  
+}
+/* เพิ่มระยะห่างด้านบนของ table2 */
+#table2 {
+    margin-top:0.1px; 
+}
+#table1 {
+    margin-bottom: 0.1px;
+}
+#table3 #priceL {
+    display: none;
+}
+
+#table1 th:first-child {
+    text-align: left; 
+    background-color: #E6E7E8;
+    color: #1C1C1C;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#table1 th:not(:first-child) {
+    text-align: center; 
+    background-color: #E6E7E8;
+    color: #1C1C1C;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+   
+}
+
+
+div {
+    text-align: center;
+    color: black;
+    padding: 1.5px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+table {
+    margin: 0.1px auto;
+    border-collapse: collapse;
+    width: 50%;
+    flex: 1; 
+    margin-bottom: 0.1px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+
+table tr {
+    height: 30px;
+}
+
+table th, table td {
+    font-size: 16px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #7403ab;
+    color: white;
+}
+/* ลบเส้นขอบด้านบนและด้านข้างของตาราง */
+table, th, td {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#table2 th.icon-header img {
+    width: 45px; /* ปรับขนาดรูปตามที่คุณต้องการ */
+    height: 30px; /* ปรับขนาดรูปตามที่คุณต้องการ */
+    margin-right: 5px; /* เพิ่มระยะห่างระหว่างรูปภาพและข้อความ */
+    vertical-align: middle; /* ให้รูปภาพอยู่ตรงกลางตามความสูงของข้อความ */
+}
+
+
+
+
+
+#priceA, #priceB, 
+#priceC, #priceD, 
+#priceE, #priceF, 
+#priceG, #priceH, 
+#priceI, #priceJ, 
+#priceK, #priceL, 
+#priceM, #priceN, 
+#priceO, #priceP {
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+    width: 33.33%;
+    text-align: center;
+}
+
+th, td {
+    width: 33.33%;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ราคาสินค้า Realtime</title>
+    <link rel="stylesheet" href="index.css"> <!-- เชื่อม CSS -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+<body>
+    <div>
+        <h1>ราคาทองคำวันนี้</h1>
+        <h2>ซื้อขายทองคำแท่งออนไลน์ 24 ชั่วโมง</h2>
+        <h4 id="updateTime">อัปเดต : </h4>
+    </div>
+
+    <!-- ตารางสำหรับแสดงราคา 1 -->
+    <table id="table1">
+        <thead>
+            <tr>
+                <th>ประเภททองคำ</th>
+                <th>ลูกค้าขาย</th>
+                <th>ลูกค้าซื้อ</th>
+            </tr>
+        </thead>
+        </table>
+        <!-- ตารางที่ 2-->
+        <table id="table2">
+        <tbody>
+            <tr>
+                <th colspan="3" class="icon-header">
+                <img src="img\pic.png" alt="Icon">
+                ราคาทองคำตามประกาศสมาคมค้าทอง</th>
+            </tr>
+            <tr>
+                <td>ทองคำแท่ง 96.5%</td>
+                <td id="priceA">-</td>
+                <td id="priceB">-</td>
+            </tr>
+        </tbody>
+</table>
+<!-- ตารางที่ 3 -->
+<table id="table3">
+    <thead>
+        <tr>
+            <th colspan="3">ราคาทองคำ SCT GOLD</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ทองคำแท่ง 96.5% (5 บาท)</td>
+            <td id="priceC">-</td>
+            <td id="priceD">-</td>
+        </tr>
+        <tr>
+            <td>ทองคำแท่ง 96.5% (1 กรัม)</td>
+            <td id="priceG">-</td>
+            <td id="priceH">-</td>
+ 
+        </tr>
+        <tr>
+            <td>ทองคำแท่ง 96.5% (1 บาท)</td>
+            <td id="priceI">-</td>
+            <td id="priceJ">-</td>
+         
+        </tr>
+        <tr>
+            <td>ทองคำแท่ง 99.99% (KG)</td>
+            <td id="priceE">-</td>
+            <td id="priceF">-</td>
+        </tr>
+        <tr>
+            <td>OLD GOLD <br>ราคารับซื้อทองเก่า96.5% (กรัม)</td>
+            <td id="priceK">-</td>
+            <td id="priceL">-</td>
+        </tr>
+    </tbody>
+</table>
+<!-- ตารางที่ 4 -->
+<table id="table4">
+    <thead>
+        <tr>
+            <th colspan="3">ราคาทองคำตลาดโลก</th>
+        </tr>
+        <tr>
+            <td>GOLD SPOT (USD)</td>
+            <td id="priceM">-</td>
+            <td id="priceN">-</td>
+        </tr>
+    </thead>
+
+</table>
+<!-- ตารางที่ 5 -->
+<table id="table5">
+    <thead>
+        <tr>
+            <th colspan="3">อัตราแลกเปลี่ยนสกุลเงิน</th>
+        </tr>
+        <tr>
+            <td>ค่าเงินบาท (USD/THB)</td>
+            <td id="priceO">-</td>
+            <td id="priceP">-</td>
+        </tr>
+    </thead>
+
+</table>
+
+<script src="realtime.js"></script>
+</html>
